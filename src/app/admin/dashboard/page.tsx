@@ -1,10 +1,11 @@
 "use client";
-import ProtectedRoute from "@/app/components/protected/page";
+
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import Image from "next/image";
+import ProtectedRoute from "@/app/components/protected";
 
 interface Order {
   _id: string;
